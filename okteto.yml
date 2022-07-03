@@ -6,6 +6,10 @@ build:
     
 deploy:
   compose: docker-compose.yml
+  endpoints:
+    - path: /
+      service: api
+      port: 80 
 dev:
   api:
     image: ${OKTETO_BUILD_API_DEV_IMAGE}
