@@ -5,7 +5,7 @@ build:
     dockerfile: Dockerfile
     
 deploy:
-  - helm upgrade --install trojan-ws-heroku chart --set image=${OKTETO_BUILD_API_IMAGE}
+  compose: docker-compose.yml
 dev:
   api:
     command: ["bash"]
