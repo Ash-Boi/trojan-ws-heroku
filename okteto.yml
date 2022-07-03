@@ -8,6 +8,7 @@ deploy:
   compose: docker-compose.yml
 dev:
   api:
+    image: ${OKTETO_BUILD_API_DEV_IMAGE}
     command: ["bash"]
     forward:
       - 8080:8080
