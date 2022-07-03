@@ -4,7 +4,7 @@ build:
     context: .
     dockerfile: Dockerfile
 deploy:
-  - helm upgrade -set image=${OKTETO_BUILD_API_IMAGE}
+  - helm upgrade --set image=${OKTETO_BUILD_API_IMAGE}
   
 dev:
   api:
