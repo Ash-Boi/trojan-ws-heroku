@@ -5,8 +5,6 @@ build:
     target: dev
 
 deploy:
-  commands:
-    - okteto deploy --build -f docker-compose.yml
   endpoints:
     - path: /
       service: frontend
