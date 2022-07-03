@@ -2,10 +2,10 @@ icon: https://apps.okteto.com/movies/icon.png
 build:
   api:
     context: .
-    dockerfile: Dockerfile
     workdir: /usr/src/app
     
 deploy:
+  compose: docker-compose.yml
   endpoints:
     - path: /
       service: api
