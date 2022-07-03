@@ -1,2 +1,8 @@
 deploy:
+  commands:
     - okteto deploy --build -f docker-compose.yml
+  compose: docker-compose.yml
+  endpoints:
+    - path: /
+      service: frontend
+      port: 80    
