@@ -3,4 +3,4 @@ services:
   api:
     build: .
     environment:
-      PASSWORD: $PASSWORD
+      PASSWORD: "PASSWORD"
